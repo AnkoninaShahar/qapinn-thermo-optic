@@ -1,10 +1,6 @@
 import numpy as np
 import torch
-
-try:
-    from src.physics import gaussian_heater_source, X_MIN, X_MAX
-except ModuleNotFoundError:
-    from physics import gaussian_heater_source, X_MIN, X_MAX
+from physics import gaussian_heater_source, X_MIN, X_MAX
 
 def solve_static_finite_difference(n_points=1000, A=1.0, xi_h=0.0, sigma_h=0.2):
     """

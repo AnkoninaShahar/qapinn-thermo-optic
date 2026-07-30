@@ -1,8 +1,5 @@
 import torch
-try:
-    from src.physics import gaussian_heater_source
-except ModuleNotFoundError:
-    from physics import gaussian_heater_source
+from physics import gaussian_heater_source
 
 def compute_static_pinn_loss(model, xi_collocation, A=1.0, xi_h=0.0, sigma_h=0.2):
     """
