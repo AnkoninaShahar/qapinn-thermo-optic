@@ -1,0 +1,15 @@
+.DS_Store
+.venv/
+.venv311/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+results/runs/smoke/
+slides/tmp_build/*
+!slides/tmp_build/build_deck.mjs
+!slides/tmp_build/package.json
+slides/rendered/
+report/rendered/
+*.inspect.ndjson
+results/runs/*.png

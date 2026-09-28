@@ -1,0 +1,133 @@
+{
+  "active_phase_rmse": 0.015586821068503037,
+  "array_artifact": "results/steady_runs/steady_classical_standard_seed37_arrays.npz",
+  "circuit_depth": 0,
+  "config": {
+    "domain": {
+      "tau_max": 1.0,
+      "tau_min": 0.0,
+      "xi_max": 1.0,
+      "xi_min": -1.0
+    },
+    "heater": {
+      "amplitude": 1.0,
+      "center": 0.0,
+      "waveform": "step",
+      "width": 0.2
+    },
+    "optical": {
+      "active_xi": 0.0,
+      "mode_width": 0.12,
+      "phase_scale": 1.0,
+      "victim_xi": 0.55
+    },
+    "reference": {
+      "convergence_grid_sizes": [
+        41,
+        81
+      ],
+      "n_tau": 81,
+      "n_xi": 81
+    },
+    "training": {
+      "collocation_points": 48,
+      "dtype": "float64",
+      "epochs": 40,
+      "eval_n_tau": 31,
+      "eval_n_xi": 31,
+      "hidden_layers": [
+        2,
+        16,
+        16
+      ],
+      "learning_rate": 0.01,
+      "log_interval": 10,
+      "quantum_tail_layers": [
+        16,
+        16
+      ],
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "standard_hidden_layers": [
+        32,
+        32,
+        32
+      ]
+    }
+  },
+  "crosstalk_abs_error": 0.042421273308763996,
+  "crosstalk_pred": 0.5928479415928365,
+  "crosstalk_ref": 0.5504266682840725,
+  "effective_rank": 1.6762388839760327,
+  "final_training_loss": 0.029590539646086034,
+  "gate_count": 0,
+  "git_commit": "4ee8b1a324f36c7aa1d6489deb05668ddcdfb4e3",
+  "mean_abs_pairwise_correlation": 0.9826729818107206,
+  "model_id": "classical_standard",
+  "pde": "steady_poisson",
+  "pde_residual_rms": 0.16174532149493726,
+  "quantum_parameters": 0,
+  "runtime_seconds": 0.0977125660283491,
+  "seed": 37,
+  "singular_values": [
+    7.880206910397942,
+    1.245255777855319,
+    0.1589019311046318,
+    0.04673857691612773,
+    0.008871199249050773,
+    0.0019075070245848137,
+    0.00013891629511141563,
+    5.473579462515386e-05,
+    6.610401269200698e-06,
+    1.0103309702856883e-06,
+    1.667049504220368e-07,
+    1.423364862607079e-08,
+    8.241367453460556e-09,
+    2.0532214814887696e-09,
+    1.3147906768137305e-10,
+    1.020005408706491e-11,
+    3.6265850685807115e-12,
+    9.709346898180101e-14,
+    2.4240899251893544e-14,
+    2.2387425703541702e-15,
+    1.5917480101677917e-15,
+    2.6108006769489226e-16,
+    1.6099807106801929e-16,
+    1.1909376898560553e-16,
+    1.0213862825595072e-16,
+    7.944621616860466e-17,
+    7.09032332341356e-17,
+    5.907053537803766e-17,
+    4.0429545596599953e-17,
+    9.947041111431101e-18,
+    2.089306069478496e-18
+  ],
+  "temperature_relative_l2": 0.061533752167366736,
+  "trainable_parameters": 2209,
+  "training_history": [
+    {
+      "epoch": 1,
+      "loss": 0.15214892873840494
+    },
+    {
+      "epoch": 10,
+      "loss": 0.07416557719954846
+    },
+    {
+      "epoch": 20,
+      "loss": 0.04771064687753652
+    },
+    {
+      "epoch": 30,
+      "loss": 0.04171277825460984
+    },
+    {
+      "epoch": 40,
+      "loss": 0.029590539646086034
+    }
+  ],
+  "victim_phase_rmse": 0.0005725013810178314
+}

@@ -1,0 +1,14 @@
+item,canonical_value,report_value,slide_value,readme_value,key_findings_value,status,notes
+transient_standard_rel_l2,0.0868,0.0868,0.0868,0.0868,0.0868,PASS,Standard classical PINN is best mean transient relative L2.
+transient_q0_rel_l2,0.1235,0.1235,0.1235,0.1235,0.1235,PASS,Q0 improves over parameter-matched classical but not standard classical.
+transient_matched_rel_l2,0.2074,0.2074,0.2074,0.2074,0.2074,PASS,Parameter-matched classical transient mean.
+transient_q1_rel_l2,0.2137,0.2137,0.2137,0.2137,0.2137,PASS,Q1 does not improve transient physical accuracy.
+steady_q1_rel_l2,0.0716,0.0716,0.0716,0.0716,0.0716,PASS,Q1 best steady mean only under fixed small-budget protocol.
+steady_standard_rel_l2,0.0869,0.0869,0.0869,0.0869,0.0869,PASS,Standard classical close to Q1 in steady task.
+q0_q1_parameters,343,343,343,343,343,PASS,Q0 and Q1 are parameter matched.
+classical_standard_parameters,2241,2241,2241,2241,NOT DISPLAYED,PASS,Standard classical transient parameter count.
+q1_mixed_interaction,"3.8026 mean, 0.0191 seed std",about 3.80,3.80,NOT DISPLAYED,near 3.80,PASS,Q1 feature 1 mixed interaction from feature_diversity.csv.
+reference_convergence_rel_l2,0.0006412794460016723,0.000641,NOT DISPLAYED,NOT DISPLAYED,NOT DISPLAYED,PASS,Reference validation remains within tolerance.
+quantum_derivative_error,3.181912511251994e-10,3.18e-10,NOT DISPLAYED,NOT DISPLAYED,NOT DISPLAYED,PASS,Quantum derivative gate passed.
+quantum_advantage_claim,not established,not established,not claimed,not claimed,not claimed,PASS,No final-facing artifact claims quantum advantage.
+q2_status,future work,future work,future work,future work,NOT DISPLAYED,PASS,Q2 is not included as reportable evidence.

@@ -1,0 +1,11 @@
+model:
+  kind: qapinn
+  architecture: q1_entangled
+  entangle: true
+  entangling_gate: CNOT_0_1
+  n_qubits: 2
+  n_layers: 1
+  measurements: [Z0, Z1]
+  tail_layers: [16, 16]
+training:
+  config: configs/physics.yaml

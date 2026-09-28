@@ -1,0 +1,182 @@
+{
+  "active_phase_rmse": 0.00928064448801277,
+  "array_artifact": "results/runs/classical_standard_seed37_arrays.npz",
+  "circuit_depth": 0,
+  "config": {
+    "domain": {
+      "tau_max": 1.0,
+      "tau_min": 0.0,
+      "xi_max": 1.0,
+      "xi_min": -1.0
+    },
+    "heater": {
+      "amplitude": 1.0,
+      "center": 0.0,
+      "waveform": "step",
+      "width": 0.2
+    },
+    "optical": {
+      "active_xi": 0.0,
+      "mode_width": 0.12,
+      "phase_scale": 1.0,
+      "victim_xi": 0.55
+    },
+    "reference": {
+      "convergence_grid_sizes": [
+        41,
+        81
+      ],
+      "n_tau": 81,
+      "n_xi": 81
+    },
+    "training": {
+      "collocation_points": 48,
+      "dtype": "float64",
+      "epochs": 40,
+      "eval_n_tau": 31,
+      "eval_n_xi": 31,
+      "hidden_layers": [
+        2,
+        16,
+        16
+      ],
+      "learning_rate": 0.01,
+      "log_interval": 10,
+      "quantum_tail_layers": [
+        16,
+        16
+      ],
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "standard_hidden_layers": [
+        32,
+        32,
+        32
+      ]
+    }
+  },
+  "crosstalk_abs_error": 0.0077108372293285266,
+  "crosstalk_pred": 0.5342160619931864,
+  "crosstalk_ref": 0.5419268992225149,
+  "explainability_artifact": "results/runs/classical_standard_seed37_explainability.npz",
+  "explainability_figures": [
+    "results/runs/classical_standard_seed37_feature0.png",
+    "results/runs/classical_standard_seed37_feature1.png",
+    "results/runs/classical_standard_seed37_feature2.png",
+    "results/runs/classical_standard_seed37_feature3.png",
+    "results/runs/classical_standard_seed37_feature4.png",
+    "results/runs/classical_standard_seed37_feature5.png",
+    "results/runs/classical_standard_seed37_feature6.png",
+    "results/runs/classical_standard_seed37_feature7.png",
+    "results/runs/classical_standard_seed37_feature8.png",
+    "results/runs/classical_standard_seed37_feature9.png",
+    "results/runs/classical_standard_seed37_feature10.png",
+    "results/runs/classical_standard_seed37_feature11.png",
+    "results/runs/classical_standard_seed37_feature12.png",
+    "results/runs/classical_standard_seed37_feature13.png",
+    "results/runs/classical_standard_seed37_feature14.png",
+    "results/runs/classical_standard_seed37_feature15.png",
+    "results/runs/classical_standard_seed37_feature16.png",
+    "results/runs/classical_standard_seed37_feature17.png",
+    "results/runs/classical_standard_seed37_feature18.png",
+    "results/runs/classical_standard_seed37_feature19.png",
+    "results/runs/classical_standard_seed37_feature20.png",
+    "results/runs/classical_standard_seed37_feature21.png",
+    "results/runs/classical_standard_seed37_feature22.png",
+    "results/runs/classical_standard_seed37_feature23.png",
+    "results/runs/classical_standard_seed37_feature24.png",
+    "results/runs/classical_standard_seed37_feature25.png",
+    "results/runs/classical_standard_seed37_feature26.png",
+    "results/runs/classical_standard_seed37_feature27.png",
+    "results/runs/classical_standard_seed37_feature28.png",
+    "results/runs/classical_standard_seed37_feature29.png",
+    "results/runs/classical_standard_seed37_feature30.png",
+    "results/runs/classical_standard_seed37_feature31.png",
+    "results/runs/classical_standard_seed37_residual.png"
+  ],
+  "final_training_loss": 0.011309635031947892,
+  "gate_count": 0,
+  "git_commit": "4ee8b1a324f36c7aa1d6489deb05668ddcdfb4e3",
+  "interaction_scores": [
+    0.040702323836883325,
+    0.14635477606531927,
+    0.005854519032482394,
+    0.11186184576334893,
+    0.060755955854570116,
+    0.14450575738744012,
+    0.028826384033696514,
+    0.10369288712726439,
+    0.19378866773654238,
+    0.0671232216843642,
+    0.18495631540790253,
+    0.09071210140624433,
+    0.0055655430796234156,
+    0.0690790944327451,
+    0.014876274900906915,
+    0.05241763426266732,
+    0.0144038701237717,
+    0.13659574096554314,
+    0.021436589933784823,
+    0.035336899591659546,
+    0.11345095570022402,
+    0.006887269014277498,
+    0.16438502769653246,
+    0.08324053222557878,
+    0.06087011760219869,
+    0.02704674499348729,
+    0.028156861040964477,
+    0.029856268285365285,
+    0.15849314799499575,
+    0.17543867655452525,
+    0.06965081552119393,
+    0.15539287383621095
+  ],
+  "model_id": "classical_standard",
+  "pde_residual_rms": 0.10854691268733045,
+  "quantum_parameters": 0,
+  "runtime_seconds": 0.14193481503752992,
+  "seed": 37,
+  "temperature_relative_l2": 0.05988617075883565,
+  "trainable_parameters": 2241,
+  "training_history": [
+    {
+      "epoch": 1,
+      "grad_norm_first_classical": 0.08411051378017241,
+      "grad_norm_quantum": 0.0,
+      "grad_norm_total": 1.215945228443373,
+      "loss": 0.16327603319358286
+    },
+    {
+      "epoch": 10,
+      "grad_norm_first_classical": 0.1130716950003873,
+      "grad_norm_quantum": 0.0,
+      "grad_norm_total": 0.6312622343069133,
+      "loss": 0.07587568090611331
+    },
+    {
+      "epoch": 20,
+      "grad_norm_first_classical": 0.08641035619388644,
+      "grad_norm_quantum": 0.0,
+      "grad_norm_total": 0.29490151586502916,
+      "loss": 0.04721826734997339
+    },
+    {
+      "epoch": 30,
+      "grad_norm_first_classical": 0.02272791664805439,
+      "grad_norm_quantum": 0.0,
+      "grad_norm_total": 0.09803049408456167,
+      "loss": 0.023625023601168568
+    },
+    {
+      "epoch": 40,
+      "grad_norm_first_classical": 0.04273995455581019,
+      "grad_norm_quantum": 0.0,
+      "grad_norm_total": 0.0827062215500005,
+      "loss": 0.011309635031947892
+    }
+  ],
+  "victim_phase_rmse": 0.004007378739663242
+}

@@ -1,0 +1,14 @@
+appdirs==1.4.4
+autograd==1.8.0
+autoray==0.6.12
+matplotlib==3.11.1
+numpy==1.26.4
+pandas==3.0.5
+PennyLane==0.35.1
+PennyLane-Lightning==0.35.1
+psutil==7.2.2
+pytest==9.1.1
+PyYAML==6.0.3
+reportlab==5.0.0
+scipy==1.17.1
+torch==2.2.2

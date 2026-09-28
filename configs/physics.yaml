@@ -1,0 +1,31 @@
+domain:
+  xi_min: -1.0
+  xi_max: 1.0
+  tau_min: 0.0
+  tau_max: 1.0
+heater:
+  amplitude: 1.0
+  center: 0.0
+  width: 0.2
+  waveform: step
+optical:
+  active_xi: 0.0
+  victim_xi: 0.55
+  mode_width: 0.12
+  phase_scale: 1.0
+reference:
+  n_xi: 81
+  n_tau: 81
+  convergence_grid_sizes: [41, 81]
+training:
+  dtype: float64
+  collocation_points: 48
+  eval_n_xi: 31
+  eval_n_tau: 31
+  epochs: 40
+  learning_rate: 0.01
+  seeds: [11, 23, 37]
+  log_interval: 10
+  hidden_layers: [2, 16, 16]
+  standard_hidden_layers: [32, 32, 32]
+  quantum_tail_layers: [16, 16]

@@ -1,0 +1,5 @@
+model:
+  kind: qapinn
+  architecture: q2_reupload
+  status: extension_not_mvp
+  reason: "Only implement after the Q0/Q1 MVP checkpoint is complete."

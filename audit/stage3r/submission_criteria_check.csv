@@ -1,0 +1,12 @@
+criterion,artifact,status,notes
+Technical report of approximately 5-15 pages,report/technical_report.pdf,PASS,PDF has 7 pages.
+Source code,"src/, scripts/, tests/",PASS,"Source, runners, and focused tests are included."
+Reproducibility instructions,README.md,PASS,"Python 3.11 setup, validation, and run commands are documented."
+Presentation slides,slides/qapinn_submission_slides.pptx,PASS,Deck has 10 rendered slides.
+Summary of key findings,submission/key_findings.md,PASS,"Findings include positive, negative, and qualified claims."
+Recommendations for future research,submission/recommendations.md,PASS,Prioritized future work is included.
+Team members and email contacts,README.md,PASS,"Amoggh Bellad <amogghb@gmail.com> and Shahar Ankonina <shahar.ankonina05@gmail.com> are listed."
+Repository public and reviewer accessible,GitHub target repository,PASS,"An unauthenticated browser view showed the target repository is public."
+Required code documentation and support files,final submission package,PASS,"The clean package includes source, tests, configs, metrics, figures, report, slides, README, and submission files."
+Setup or installation instructions,README.md,PASS,"Environment setup and validation commands are included."
+No public controlled-language claim,"report, slides, README, submission docs",PASS,No controlled-language compliance claim appears in final-facing artifacts.

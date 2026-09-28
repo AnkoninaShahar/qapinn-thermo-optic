@@ -1,0 +1,8 @@
+model:
+  kind: classical_matched
+  hidden_layers: [2, 16, 16]
+standard_model:
+  kind: classical_standard
+  hidden_layers: [32, 32, 32]
+training:
+  config: configs/physics.yaml

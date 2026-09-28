@@ -1,0 +1,104 @@
+{
+  "active_phase_rmse": 0.01681674058906002,
+  "array_artifact": "results/steady_runs/steady_classical_matched_seed37_arrays.npz",
+  "circuit_depth": 0,
+  "config": {
+    "domain": {
+      "tau_max": 1.0,
+      "tau_min": 0.0,
+      "xi_max": 1.0,
+      "xi_min": -1.0
+    },
+    "heater": {
+      "amplitude": 1.0,
+      "center": 0.0,
+      "waveform": "step",
+      "width": 0.2
+    },
+    "optical": {
+      "active_xi": 0.0,
+      "mode_width": 0.12,
+      "phase_scale": 1.0,
+      "victim_xi": 0.55
+    },
+    "reference": {
+      "convergence_grid_sizes": [
+        41,
+        81
+      ],
+      "n_tau": 81,
+      "n_xi": 81
+    },
+    "training": {
+      "collocation_points": 48,
+      "dtype": "float64",
+      "epochs": 40,
+      "eval_n_tau": 31,
+      "eval_n_xi": 31,
+      "hidden_layers": [
+        2,
+        16,
+        16
+      ],
+      "learning_rate": 0.01,
+      "log_interval": 10,
+      "quantum_tail_layers": [
+        16,
+        16
+      ],
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "standard_hidden_layers": [
+        32,
+        32,
+        32
+      ]
+    }
+  },
+  "crosstalk_abs_error": 0.03293535087572619,
+  "crosstalk_pred": 0.5833620191597987,
+  "crosstalk_ref": 0.5504266682840725,
+  "effective_rank": 1.3546347273759731,
+  "final_training_loss": 0.05459168536790668,
+  "gate_count": 0,
+  "git_commit": "4ee8b1a324f36c7aa1d6489deb05668ddcdfb4e3",
+  "mean_abs_pairwise_correlation": 0.9649982483689966,
+  "model_id": "classical_matched",
+  "pde": "steady_poisson",
+  "pde_residual_rms": 0.22022868526496892,
+  "quantum_parameters": 0,
+  "runtime_seconds": 0.09030166600132361,
+  "seed": 37,
+  "singular_values": [
+    2.0621547566997247,
+    0.20502098215250192
+  ],
+  "temperature_relative_l2": 0.0696681872691712,
+  "trainable_parameters": 341,
+  "training_history": [
+    {
+      "epoch": 1,
+      "loss": 1.0831075432212556
+    },
+    {
+      "epoch": 10,
+      "loss": 0.12038755440695248
+    },
+    {
+      "epoch": 20,
+      "loss": 0.09613597991620426
+    },
+    {
+      "epoch": 30,
+      "loss": 0.070615463875247
+    },
+    {
+      "epoch": 40,
+      "loss": 0.05459168536790668
+    }
+  ],
+  "victim_phase_rmse": 0.0030804319205290642
+}

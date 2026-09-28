@@ -1,0 +1,59 @@
+status: frozen_after_final_phase_1_to_4
+date: "2026-08-07"
+physics_config: configs/physics.yaml
+core_models:
+  - classical_matched
+  - classical_standard
+  - q0_separable
+  - q1_entangled
+core_pdes:
+  transient_heat:
+    equation: "theta_tau = theta_xx + S(xi)u(tau)"
+    constraints: "theta(-1,tau)=theta(1,tau)=0, theta(xi,0)=0"
+    train_script: scripts/run_mvp.py
+    metrics: results/metrics/final_transient_metrics.csv
+  steady_poisson:
+    equation: "-theta_xx = S(xi)"
+    constraints: "theta(-1)=theta(1)=0"
+    train_script: scripts/run_steady.py
+    metrics: results/metrics/steady_metrics.csv
+shared_protocol:
+  seeds: [11, 23, 37]
+  dtype: float64
+  optimizer: Adam
+  learning_rate: 0.01
+  epochs: 40
+  transient_collocation_points: 48
+  steady_collocation_points: 48
+  transient_eval_grid: "31 x 31"
+  steady_eval_points: 31
+controlled_quantum_comparison:
+  q0: "two qubits, RY position/time encoding, local Rot gates, measurements <Z0>, <Z1>"
+  q1: "identical to Q0 plus one CNOT(0,1)"
+  matched_trainable_parameters: 343
+core_metrics:
+  - relative_l2_temperature_error
+  - pde_residual_rms
+  - active_phase_rmse
+  - victim_phase_rmse
+  - crosstalk_absolute_error
+  - trainable_parameter_count
+  - quantum_parameter_count
+  - gate_count
+  - circuit_depth
+  - runtime_seconds
+core_explainability:
+  - feature_maps
+  - mixed_space_time_interaction_score
+  - fourier_spectral_error
+  - gradient_histories
+  - pde_residual_localization
+  - feature_correlation
+  - effective_rank
+excluded_from_main_study:
+  q2_data_reuploading:
+    reason: "Deferred by priority rule until report, figures, tables, and reproducibility package are complete."
+  quantum_hardware:
+    reason: "Challenge allows simulator-only work and no hardware evidence was required."
+  quantum_advantage_claim:
+    reason: "No runtime or hardware evidence supports it; simulator QAPINNs are slower in this study."

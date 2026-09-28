@@ -1,0 +1,23 @@
+# Submission Checklist
+
+- Technical report: `report/technical_report.pdf`
+- Source repository: current repository
+- Reproducibility instructions: `README.md`
+- Presentation slides: `slides/qapinn_submission_slides.pptx`
+- Key findings: `submission/key_findings.md`
+- Recommendations: `submission/recommendations.md`
+- AI-use disclosure: `submission/ai_use_disclosure.md`
+- Contribution statement: `submission/contribution_statement.md`
+- Final experiment manifest: `configs/final_experiment_manifest.yaml`
+- Final submission manifest: `submission/final_submission_manifest.json`
+- Transient metrics: `results/metrics/final_transient_metrics.csv`
+- Steady metrics: `results/metrics/steady_metrics.csv`
+- Explainability metrics: `results/metrics/feature_diversity.csv`
+- Fourier metrics: `results/metrics/fourier_spectral_errors.csv`
+- Validation records:
+  - `results/metrics/reference_validation.json`
+  - `results/metrics/quantum_derivative_gate.json`
+- Final visual QA: `audit/stage3r/final_visual_qa.md`
+- Final consistency check: `audit/stage3r/final_consistency_check.csv`
+- Submission criteria check: `audit/stage3r/submission_criteria_check.csv`
+- Final archive: `submission/qapinn_thermo_optic_final_submission.zip`
