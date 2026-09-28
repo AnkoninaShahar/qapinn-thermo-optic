@@ -1,0 +1,104 @@
+{
+  "active_phase_rmse": 0.005654788470549871,
+  "array_artifact": "results/steady_runs/steady_q1_entangled_seed11_arrays.npz",
+  "circuit_depth": 3,
+  "config": {
+    "domain": {
+      "tau_max": 1.0,
+      "tau_min": 0.0,
+      "xi_max": 1.0,
+      "xi_min": -1.0
+    },
+    "heater": {
+      "amplitude": 1.0,
+      "center": 0.0,
+      "waveform": "step",
+      "width": 0.2
+    },
+    "optical": {
+      "active_xi": 0.0,
+      "mode_width": 0.12,
+      "phase_scale": 1.0,
+      "victim_xi": 0.55
+    },
+    "reference": {
+      "convergence_grid_sizes": [
+        41,
+        81
+      ],
+      "n_tau": 81,
+      "n_xi": 81
+    },
+    "training": {
+      "collocation_points": 48,
+      "dtype": "float64",
+      "epochs": 40,
+      "eval_n_tau": 31,
+      "eval_n_xi": 31,
+      "hidden_layers": [
+        2,
+        16,
+        16
+      ],
+      "learning_rate": 0.01,
+      "log_interval": 10,
+      "quantum_tail_layers": [
+        16,
+        16
+      ],
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "standard_hidden_layers": [
+        32,
+        32,
+        32
+      ]
+    }
+  },
+  "crosstalk_abs_error": 0.02472836802828493,
+  "crosstalk_pred": 0.5751550363123574,
+  "crosstalk_ref": 0.5504266682840725,
+  "effective_rank": 1.0000000000000013,
+  "final_training_loss": 0.01260883990287188,
+  "gate_count": 5,
+  "git_commit": "4ee8b1a324f36c7aa1d6489deb05668ddcdfb4e3",
+  "mean_abs_pairwise_correlation": 0.9999999999999999,
+  "model_id": "q1_entangled",
+  "pde": "steady_poisson",
+  "pde_residual_rms": 0.10605154724861195,
+  "quantum_parameters": 6,
+  "runtime_seconds": 24.119173084036447,
+  "seed": 11,
+  "singular_values": [
+    5.644751784591274,
+    3.994683133306875e-16
+  ],
+  "temperature_relative_l2": 0.022305911396043522,
+  "trainable_parameters": 343,
+  "training_history": [
+    {
+      "epoch": 1,
+      "loss": 0.8203626847435249
+    },
+    {
+      "epoch": 10,
+      "loss": 0.04155655394865842
+    },
+    {
+      "epoch": 20,
+      "loss": 0.046048278653161724
+    },
+    {
+      "epoch": 30,
+      "loss": 0.009946949527851768
+    },
+    {
+      "epoch": 40,
+      "loss": 0.01260883990287188
+    }
+  ],
+  "victim_phase_rmse": 0.001800469167217475
+}

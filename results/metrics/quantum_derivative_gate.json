@@ -1,0 +1,19 @@
+{
+  "d2q_dxi2_finite": true,
+  "dq_dtau_finite": true,
+  "dq_dxi_finite": true,
+  "feature_sample": [
+    [
+      0.8054650420115868,
+      0.4079402068458229
+    ],
+    [
+      0.31473487305875136,
+      -0.1694371264680805
+    ]
+  ],
+  "features_finite": true,
+  "numerical_dq_dxi_error": 3.181912511251994e-10,
+  "passes": true,
+  "quantum_parameter_gradients_finite": true
+}

@@ -1,0 +1,15 @@
+{
+  "convergence": {
+    "coarse_n": 41,
+    "fine_n": 81,
+    "relative_l2": 0.0006412794460016723
+  },
+  "peak_theta": 0.19430987028320507,
+  "reference_validation": {
+    "boundary_max_abs": 0.0,
+    "center_monotonic_violations": 0,
+    "initial_max_abs": 0.0,
+    "min_theta": 0.0,
+    "passes": true
+  }
+}

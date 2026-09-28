@@ -1,0 +1,117 @@
+{
+  "active_phase_rmse": 0.024708824834936326,
+  "array_artifact": "results/runs/q1_entangled_seed23_arrays.npz",
+  "circuit_depth": 3,
+  "config": {
+    "domain": {
+      "tau_max": 1.0,
+      "tau_min": 0.0,
+      "xi_max": 1.0,
+      "xi_min": -1.0
+    },
+    "heater": {
+      "amplitude": 1.0,
+      "center": 0.0,
+      "waveform": "step",
+      "width": 0.2
+    },
+    "optical": {
+      "active_xi": 0.0,
+      "mode_width": 0.12,
+      "phase_scale": 1.0,
+      "victim_xi": 0.55
+    },
+    "reference": {
+      "convergence_grid_sizes": [
+        41,
+        81
+      ],
+      "n_tau": 81,
+      "n_xi": 81
+    },
+    "training": {
+      "collocation_points": 48,
+      "dtype": "float64",
+      "epochs": 40,
+      "eval_n_tau": 31,
+      "eval_n_xi": 31,
+      "hidden_layers": [
+        2,
+        16,
+        16
+      ],
+      "learning_rate": 0.01,
+      "log_interval": 10,
+      "quantum_tail_layers": [
+        16,
+        16
+      ],
+      "seeds": [
+        11,
+        23,
+        37
+      ]
+    }
+  },
+  "crosstalk_abs_error": 0.016161459752809915,
+  "crosstalk_pred": 0.525765439469705,
+  "crosstalk_ref": 0.5419268992225149,
+  "explainability_artifact": "results/runs/q1_entangled_seed23_explainability.npz",
+  "explainability_figures": [
+    "results/runs/q1_entangled_seed23_feature0.png",
+    "results/runs/q1_entangled_seed23_feature1.png",
+    "results/runs/q1_entangled_seed23_residual.png"
+  ],
+  "final_training_loss": 0.011742575867892091,
+  "gate_count": 5,
+  "git_commit": "4ee8b1a324f36c7aa1d6489deb05668ddcdfb4e3",
+  "interaction_scores": [
+    2.384707230069895e-16,
+    3.7850865311634263
+  ],
+  "model_id": "q1_entangled",
+  "pde_residual_rms": 0.14663023425294786,
+  "quantum_parameters": 6,
+  "runtime_seconds": 24.60422129300423,
+  "seed": 23,
+  "temperature_relative_l2": 0.1835782959398122,
+  "trainable_parameters": 343,
+  "training_history": [
+    {
+      "epoch": 1,
+      "grad_norm_first_classical": 0.7544999513437735,
+      "grad_norm_quantum": 0.11254889635918407,
+      "grad_norm_total": 4.345990972719952,
+      "loss": 0.23462139602569101
+    },
+    {
+      "epoch": 10,
+      "grad_norm_first_classical": 0.055543789147861504,
+      "grad_norm_quantum": 0.02268122094337499,
+      "grad_norm_total": 0.2548958581258276,
+      "loss": 0.02456154583890525
+    },
+    {
+      "epoch": 20,
+      "grad_norm_first_classical": 0.13367655442740994,
+      "grad_norm_quantum": 0.021108860987317467,
+      "grad_norm_total": 0.5924559041371991,
+      "loss": 0.026196149517930836
+    },
+    {
+      "epoch": 30,
+      "grad_norm_first_classical": 0.03784107117426187,
+      "grad_norm_quantum": 0.019818733394555584,
+      "grad_norm_total": 0.24819389279962104,
+      "loss": 0.016056557482877275
+    },
+    {
+      "epoch": 40,
+      "grad_norm_first_classical": 0.011780958829886458,
+      "grad_norm_quantum": 0.013824359367725476,
+      "grad_norm_total": 0.060288952570997194,
+      "loss": 0.011742575867892091
+    }
+  ],
+  "victim_phase_rmse": 0.016623369979879708
+}
